@@ -1,0 +1,186 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasta Perfection | CRAVIO</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+   
+<!-- NAVBAR -->
+<header class="navbar">
+
+    <a href="index.html" class="logo">
+        CRAVIO<span>.</span>
+    </a>
+
+    <nav id="navLinks" class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="index.html#menu">Menu</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#offers">Offers</a>
+        <a href="index.html#reviews">Reviews</a>
+        <a href="index.html#contact">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+        <button id="cartTrigger" class="cart-btn">
+            <span>Cart</span>
+            <span id="cartCount">0</span>
+        </button>
+
+        <a href="index.html#menu" class="nav-order-btn">
+            Order Now
+        </a>
+    </div>
+
+    <button class="menu-toggle" id="menuToggle">
+        ☰
+    </button>
+
+</header>
+
+
+    <!-- PAGE HEADING -->
+    <section class="category-heading">
+        <p>CREAMY • RICH • IRRESISTIBLE</p>
+        <h1>Pasta Perfection</h1>
+        <span>Delicious pasta made to satisfy every craving.</span>
+    </section>
+
+    <!-- PASTA MENU -->
+    <section class="food-menu">
+
+        <div class="food-grid">
+
+            <!-- ITEM 1 -->
+            <div class="food-card">
+                <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=800" alt="Creamy pasta">
+                <div class="food-info">
+                    <h3>Alfredo Pasta</h3>
+                    <p>Creamy white sauce pasta with herbs and cheese.</p>
+                    <h4>$12.00</h4>
+                    <button class="add-btn" data-name="Alfredo Pasta" data-price="12">
+                        Add to Cart
+                    </button>
+                    <button class="direct-order-btn" data-name="Alfredo Pasta" data-price="12">
+                        Order Now
+                    </button>
+                </div>
+            </div>
+
+            <!-- ITEM 2 -->
+            <div class="food-card">
+                <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?w=800" alt="Red sauce pasta">
+                <div class="food-info">
+                    <h3>Arrabbiata Pasta</h3>
+                    <p>Italian pasta tossed in spicy tomato sauce.</p>
+                    <h4>$11.00</h4>
+                    <button class="add-btn" data-name="Arrabbiata Pasta" data-price="11">
+                        Add to Cart
+                    </button>
+                    <button class="direct-order-btn" data-name="Arrabbiata Pasta" data-price="11">
+                        Order Now
+                    </button>
+                </div>
+            </div>
+
+            <!-- ITEM 3 -->
+            <div class="food-card">
+                <img src="https://images.unsplash.com/photo-1555949258-eb67b1ef0ceb?w=800" alt="Pasta with cheese">
+                <div class="food-info">
+                    <h3>Cheesy Pasta</h3>
+                    <p>Rich cheesy pasta with a delicious creamy flavor.</p>
+                    <h4>$13.00</h4>
+                    <button class="add-btn" data-name="Cheesy Pasta" data-price="13">
+                        Add to Cart
+                    </button>
+                    <button class="direct-order-btn" data-name="Cheesy Pasta" data-price="13">
+                        Order Now
+                    </button>
+                </div>
+            </div>
+
+            <!-- ITEM 4 -->
+            <div class="food-card">
+                <img src="https://images.unsplash.com/photo-1608897013039-887f21d8c804?w=800" alt="Pasta with vegetables">
+                <div class="food-info">
+                    <h3>Vegetable Pasta</h3>
+                    <p>Fresh vegetables mixed with flavorful pasta sauce.</p>
+                    <h4>$10.00</h4>
+                    <button class="add-btn" data-name="Vegetable Pasta" data-price="10">
+                        Add to Cart
+                    </button>
+                    <button class="direct-order-btn" data-name="Vegetable Pasta" data-price="10">
+                        Order Now
+                    </button>
+                </div>
+            </div>
+
+            <!-- ITEM 5 -->
+            <div class="food-card">
+                <img src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?w=800" alt="Spaghetti pasta">
+                <div class="food-info">
+                    <h3>Spaghetti Special</h3>
+                    <p>Classic spaghetti with rich sauce and herbs.</p>
+                    <h4>$12.50</h4>
+                    <button class="add-btn" data-name="Spaghetti Special" data-price="12.5">
+                        Add to Cart
+                    </button>
+                    <button class="direct-order-btn" data-name="Spaghetti Special" data-price="12.5">
+                        Order Now
+                    </button>
+                </div>
+            </div>
+
+            <!-- ITEM 6 -->
+            <div class="food-card">
+                <img src="https://cdn.pixabay.com/photo/2026/07/20/21/40/21-40-45-729_1280.jpg" alt="Pasta dish">
+                <div class="food-info">
+                    <h3>Chicken Pasta</h3>
+                    <p>Tender chicken pieces with creamy pasta sauce.</p>
+                    <h4>$14.00</h4>
+                    <button class="add-btn" data-name="Chicken Pasta" data-price="14">
+                        Add to Cart
+                    </button>
+                    <button class="direct-order-btn" data-name="Chicken Pasta" data-price="14">
+                        Order Now
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CART DRAWER -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+    <aside class="cart-drawer" id="cartDrawer">
+        <button id="closeCart" class="close-cart">×</button>
+        <h2>Your Cart</h2>
+
+        <div id="cartItems"></div>
+
+        <div class="cart-bottom">
+            <h3>Total: $<span id="cartTotal">0.00</span></h3>
+            <button id="checkoutBtn">Proceed to Checkout</button>
+        </div>
+    </aside>
+
+    <footer class="pasta-footer">
+        <p>© 2026 CRAVIO. Cravings Made Extraordinary.</p>
+        <a href="index.html">Back to Home</a>
+    </footer>
+
+    <!-- CART SCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+</html>

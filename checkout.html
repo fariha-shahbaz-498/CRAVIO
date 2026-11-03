@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRAVIO | Checkout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="checkout-header">
+        <a href="index.html" class="logo">CRAVIO<span>.</span></a>
+        <a href="index.html" class="back-home">← Back to Home</a>
+    </header>
+
+    <main class="checkout-container">
+
+        <h1>Complete Your Order</h1>
+        <p>Fresh food is just one step away!</p>
+
+        <div class="checkout-content">
+
+            <form id="checkoutForm">
+
+                <h2>Delivery Information</h2>
+
+                <label for="customerName">Full Name</label>
+                <input type="text" id="customerName"
+                       placeholder="Enter your name" required>
+
+                <label for="customerPhone">Phone Number</label>
+                <input type="tel" id="customerPhone"
+                       placeholder="Enter your phone number" required>
+
+                <label for="customerAddress">Delivery Address</label>
+                <textarea id="customerAddress"
+                          placeholder="Enter your complete address"
+                          required></textarea>
+
+                <label for="customerNotes">Order Notes (Optional)</label>
+                <textarea id="customerNotes"
+                          placeholder="Any special instructions?"></textarea>
+
+                <button type="submit" class="place-order-btn">
+                    Place Order
+                </button>
+
+            </form>
+
+            <div class="order-summary">
+                <h2>Your Order</h2>
+                <div id="checkoutItems"></div>
+
+                <div class="summary-total">
+                    <span>Total Amount</span>
+                    <strong id="checkoutTotal">$0.00</strong>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="checkout.js"></script>
+</body>
+</html>
+```

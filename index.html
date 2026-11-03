@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="assets/favicon.png.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRAVIO | Cravings Made Extraordinary</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,500;1,600&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- CRAVIO LOADING SCREEN -->
+<div class="loader" id="pageLoader">
+    <div class="loader-content">
+        <h1>CRAVIO<span>.</span></h1>
+        <p>Cravings Made Extraordinary</p>
+        <div class="loader-line"></div>
+    </div>
+</div>
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <a href="#" class="logo">
+            <span class="logo-icon">🍔</span>
+            CRAVIO
+        </a>
+
+        <nav class="nav-links" id="navLinks">
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#about">About</a>
+            <a href="#offers">Offers</a>
+            <a href="#reviews">Reviews</a>
+            <a href="#contact">Contact</a>
+            <a href="#deals">Deals</a>
+        </nav>
+
+        <div class="nav-actions">
+            <button class="cart-trigger" id="cartTrigger">
+                🛒 Cart (<span id="cartCount">0</span>)
+            </button>
+            <a href="#menu" class="nav-button">Order Now ↗</a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+                ☰
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section class="hero" id="home">
+            <video class="hero-video"
+                   autoplay
+                   muted
+                   loop
+                   playsinline
+                   preload="metadata"
+                   poster="assets/hero-poster.jpg.jpg">
+                <source src="assets/hero-food.mp4.mp4" type="video/mp4">
+                Your browser does not support HTML video.
+            </video>
+
+            <div class="video-overlay"></div>
+
+            <div class="hero-content">
+                <p class="eyebrow">FRESH FOOD • GREAT MOOD</p>
+                <h1>
+                    Cravings Made
+                    <span>Extraordinary.</span>
+                </h1>
+                <p class="hero-description">
+                    Fresh ingredients. Bold flavors.
+                    Unforgettable taste. Only at CRAVIO.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#menu" class="primary-button">
+                        Explore Menu ↗
+                    </a>
+                    <a href="#about" class="secondary-button">
+                        Discover Our Story
+                    </a>
+                </div>
+                <div class="hero-note">
+                    <span>✦</span> MADE FRESH. SERVED WITH LOVE.
+                </div>
+            </div>
+
+            <div class="scroll-indicator">
+                SCROLL TO EXPLORE
+                <span>↓</span>
+            </div>
+        </section>
+        
+           
+<!-- ================= SPECIAL DEALS ================= -->
+<section class="deals-section" id="deals">
+
+    <div class="deals-heading">
+        <span class="deals-subtitle">SPECIAL OFFERS</span>
+        <h2>Deals Made to <span>Crave</span></h2>
+        <p>Delicious combinations, amazing prices. Find your favourite deal!</p>
+    </div>
+
+    <div class="deals-grid">
+
+        <!-- DEAL 1 -->
+        <div class="deal-card">
+            <div class="deal-image">
+                <img src="assets/deal-burger.jpg.jpg" alt="Burger Combo">
+                <span class="discount-tag">20% OFF</span>
+            </div>
+            <div class="deal-info">
+                <h3>Burger Combo</h3>
+                <p>Classic Burger + French Fries + Cold Drink</p>
+                <div class="deal-price">
+                    <del>$20.00</del>
+                    <strong>$16.00</strong>
+                </div>
+                <button class="add-btn" data-name="Burger Combo" data-price="16">
+                    Add to Cart +
+                </button>
+            </div>
+        </div>
+
+        <!-- DEAL 2 -->
+        <div class="deal-card">
+            <div class="deal-image">
+                <img src="assets/deal-pizza.jpg.jpg" alt="Pizza Party">
+                <span class="discount-tag">15% OFF</span>
+            </div>
+            <div class="deal-info">
+                <h3>Pizza Party</h3>
+                <p>Medium Pizza + Garlic Bread + Cold Drink</p>
+                <div class="deal-price">
+                    <del>$20.00</del>
+                    <strong>$17.00</strong>
+                </div>
+                <button class="add-btn" data-name="Pizza Party" data-price="17">
+                    Add to Cart +
+                </button>
+            </div>
+        </div>
+
+        <!-- DEAL 3 -->
+        <div class="deal-card">
+            <div class="deal-image">
+                <img src="assets/deal-shawarma.jpg.jpg" alt="Shawarma Feast">
+                <span class="discount-tag">20% OFF</span>
+            </div>
+            <div class="deal-info">
+                <h3>Shawarma Feast</h3>
+                <p>2 Shawarmas + Fries + 2 Cold Drinks</p>
+                <div class="deal-price">
+                    <del>$25.00</del>
+                    <strong>$20.00</strong>
+                </div>
+                <button class="add-btn" data-name="Shawarma Feast" data-price="20">
+                    Add to Cart +
+                </button>
+            </div>
+        </div>
+
+        <!-- DEAL 4 -->
+        <div class="deal-card">
+            <div class="deal-image">
+                <img src="assets/deal-friends.jpg" alt="Friends Treat">
+                <span class="discount-tag">25% OFF</span>
+            </div>
+            <div class="deal-info">
+                <h3>Friends Treat</h3>
+                <p>Chicken Nuggets + Loaded Fries + Wings</p>
+                <div class="deal-price">
+                    <del>$24.00</del>
+                    <strong>$18.00</strong>
+                </div>
+                <button class="add-btn" data-name="Friends Treat" data-price="18">
+                    Add to Cart +
+                </button>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- FOOD MENU SECTION -->
+<section class="menu-section" id="menu">
+
+    <div class="section-heading">
+        <p class="section-label">✦ DISCOVER YOUR FAVORITE</p>
+        <h2>Explore Our <span>Menu</span></h2>
+        <p>Whatever you're craving, there's something delicious waiting for you.</p>
+    </div>
+
+    <div class="category-grid">
+
+        <!-- BURGERS -->
+        <div class="category-card">
+            <div class="category-image">
+                <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800" alt="Burger">
+                
+            </div>
+            <div class="category-info">
+                <span class="category-kicker">JUICY • FRESH • DELICIOUS</span>
+                <h3>Burger Bliss</h3>
+                <p>Juicy patties, melted cheese and unforgettable bites.</p>
+                <div class="category-actions">
+                    <a href="burgers.html" class="category-order-btn">Order Now ↗</a>
+                    <a href="burgers.html" class="category-view-btn">Explore Menu</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- PIZZA -->
+        <div class="category-card">
+            <div class="category-image">
+                <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=800" alt="Pizza">
+            </div>
+            <div class="category-info">
+                <span class="category-kicker">HOT • CHEESY • FRESH</span>
+                <h3>Pizza Paradise</h3>
+                <p>Freshly baked pizzas loaded with irresistible toppings.</p>
+                <div class="category-actions">
+                    <a href="pizza.html" class="category-order-btn">Order Now ↗</a>
+                    <a href="pizza.html" class="category-view-btn">Explore Menu</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- FRIES -->
+        <div class="category-card">
+            <div class="category-image">
+                <img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=800" alt="Fries">
+            </div>
+            <div class="category-info">
+                <span class="category-kicker">GOLDEN • CRUNCHY • TASTY</span>
+                <h3>Crispy Cravings</h3>
+                <p>Golden fries and delicious sides made for every mood.</p>
+                <div class="category-actions">
+                    <a href="fries.html" class="category-order-btn">Order Now ↗</a>
+                    <a href="fries.html" class="category-view-btn">Explore Menu</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- PASTA -->
+<div class="category-card">
+    <div class="category-image">
+        <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=800" alt="Creamy Italian Pasta">
+    </div>
+
+    <div class="category-info">
+        <span class="category-kicker">CREAMY • RICH • IRRESISTIBLE</span>
+        <h3>Pasta Perfection</h3>
+        <p>Delicious pasta tossed in rich sauces and fresh flavors.</p>
+
+        <div class="category-actions">
+            <a href="pasta.html" class="category-order-btn">Order Now ↗</a>
+            <a href="pasta.html" class="category-view-btn">Explore Menu</a>
+        </div>
+    </div>
+</div>
+        <!-- SHAWARMA -->
+        <div class="category-card">
+            <div class="category-image">
+                <img src="https://images.unsplash.com/photo-1529006557810-274b9b2fc783?w=800" alt="Shawarma">
+            </div>
+            <div class="category-info">
+                <span class="category-kicker">WRAPPED • SPICY • FLAVORFUL</span>
+                <h3>Shawarma Street</h3>
+                <p>Flavor-packed shawarma wraps with delicious sauces.</p>
+                <div class="category-actions">
+                    <a href="shawarma.html" class="category-order-btn">Order Now ↗</a>
+                    <a href="shawarma.html" class="category-view-btn">Explore Menu</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- DRINKS -->
+        <div class="category-card">
+            <div class="category-image">
+                <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?w=800" alt="Drinks">
+            </div>
+            <div class="category-info">
+                <span class="category-kicker">COOL • REFRESHING • FUN</span>
+                <h3>Sip & Chill</h3>
+                <p>Refreshing drinks and creamy shakes to complete your meal.</p>
+                <div class="category-actions">
+                    <a href="drinks.html" class="category-order-btn">Order Now ↗</a>
+                    <a href="drinks.html" class="category-view-btn">Explore Menu</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="menu-footer">
+        <p>✦ MADE FRESH. SERVED WITH LOVE. ✦</p>
+    </div>
+
+</section>
+
+
+            <div class="menu-footer">
+                <a href="#menu" class="view-menu-btn">Explore More Delicious Food ↗</a>
+            </div>
+        </section>
+
+        <!-- SPECIAL OFFERS SECTION -->
+        <section class="offers-section" id="offers">
+            <div class="offer-content">
+                <div class="offer-text">
+                    <p class="offer-label">LIMITED TIME OFFER</p>
+                    <h2>
+                        A Little More
+                        <span>Delicious.</span>
+                    </h2>
+                    <p class="offer-description">
+                        Enjoy your favorite food with an exclusive
+                        discount. Good food, better moments!
+                    </p>
+                    <div class="discount">
+                        <strong>30%</strong>
+                        <span>OFF</span>
+                    </div>
+                    <p class="offer-note">
+                        On your first order with CRAVIO.
+                    </p>
+                    <a href="#menu" class="offer-button">
+                        Order Now ↗
+                    </a>
+                </div>
+
+                <div class="offer-image">
+                    <img src="https://cdn.pixabay.com/photo/2024/05/06/16/58/burger-8743791_1280.jpg" alt="Delicious gourmet pizza">
+                    <div class="image-caption">
+                        <span>✦</span> FRESHLY MADE FOR YOU
+                    </div>
+                </div>
+
+                <div class="offer-decoration">30</div>
+            </div>
+
+            <div class="offer-bottom">
+                <span>✦ FRESH INGREDIENTS</span>
+                <span>✦ AMAZING FLAVORS</span>
+                <span>✦ UNFORGETTABLE MOMENTS</span>
+            </div>
+        </section>
+
+        <!-- ABOUT CRAVIO SECTION -->
+        <section class="about-section" id="about">
+            <div class="about-container">
+                <div class="about-visual">
+                    <div class="about-main-image">
+                        <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?w=1000" alt="Fresh gourmet CRAVIO burger">
+                    </div>
+                    <div class="about-small-image">
+                        <img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=500" alt="Golden crispy fries">
+                    </div>
+                    <div class="experience-badge">
+                        <strong>100%</strong>
+                        <span>FRESHNESS</span>
+                    </div>
+                </div>
+
+                <div class="about-content">
+                    <p class="about-label">OUR STORY</p>
+                    <h2>
+                        More Than Food.
+                        <span>It's an Experience.</span>
+                    </h2>
+                    <p class="about-description">
+                        At CRAVIO, we believe great food brings people together.
+                        Every bite is made with fresh ingredients, bold flavors and a passion for perfection.
+                    </p>
+                    <p class="about-description">
+                        From our signature burgers to crispy golden fries, we make every meal special.
+                        Because you deserve more than just fast food.
+                    </p>
+                    <a href="#menu" class="about-button">Discover Our Menu ↗</a>
+
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <strong>10K+</strong>
+                            <span>Happy Customers</span>
+                        </div>
+                        <div class="stat-item">
+                            <strong>15+</strong>
+                            <span>Menu Favorites</span>
+                        </div>
+                        <div class="stat-item">
+                            <strong>4.8</strong>
+                            <span>Customer Rating</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CUSTOMER REVIEWS SECTION -->
+        <section class="reviews-section" id="reviews">
+            <div class="reviews-heading">
+                <p class="reviews-label">LOVE FROM OUR CUSTOMERS</p>
+                <h2>Good Food. <span>Great Reviews.</span></h2>
+                <p>Every smile tells a story. Here's what our customers say.</p>
+            </div>
+
+            <div class="rating-overview">
+                <strong>4.8</strong>
+                <div class="rating-details">
+                    <div class="stars">★★★★★</div>
+                    <p>Customer satisfaction rating</p>
+                </div>
+            </div>
+
+            <div class="review-grid">
+                <article class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">
+                        "Absolutely delicious! The burger was fresh,
+                        juicy and full of flavor. Definitely coming back!"
+                    </p>
+                    <div class="review-author">
+                        <img src="https://i.pravatar.cc/100?img=47" alt="Customer profile">
+                        <div>
+                            <h3>Sarah Johnson</h3>
+                            <span>Food Lover</span>
+                        </div>
+                        <span class="quote-icon">“</span>
+                    </div>
+                </article>
+
+                <article class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">
+                        "Amazing food and wonderful presentation.
+                        The fries were crispy and the service was excellent."
+                    </p>
+                    <div class="review-author">
+                        <img src="https://i.pravatar.cc/100?img=12" alt="Customer profile">
+                        <div>
+                            <h3>Michael Brown</h3>
+                            <span>Regular Customer</span>
+                        </div>
+                        <span class="quote-icon">“</span>
+                    </div>
+                </article>
+
+                <article class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">
+                        "A perfect place for food lovers. Great taste,
+                        beautiful atmosphere and generous portions!"
+                    </p>
+                    <div class="review-author">
+                        <img src="https://i.pravatar.cc/100?img=44" alt="Customer profile">
+                        <div>
+                            <h3>Emily Davis</h3>
+                            <span>Happy Customer</span>
+                        </div>
+                        <span class="quote-icon">“</span>
+                    </div>
+                </article>
+            </div>
+
+            <div class="reviews-bottom">
+                <span>YOUR LOVE MAKES US BETTER</span>
+                <span class="reviews-decoration">✦ ✦ ✦</span>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="footer" id="contact">
+            <div class="footer-container">
+                <div class="footer-brand">
+                    <a href="#home" class="footer-logo">🍔 CRAVIO</a>
+                    <p>
+                        Cravings Made Extraordinary.
+                        Fresh ingredients, bold flavors and
+                        unforgettable food experiences.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram">IG</a>
+                        <a href="#" aria-label="Facebook">FB</a>
+                        <a href="#" aria-label="TikTok">TK</a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Explore</h3>
+                    <a href="#home">Home</a>
+                    <a href="#about">Our Story</a>
+                    <a href="#menu">Our Menu</a>
+                    <a href="#offers">Special Offers</a>
+                    <a href="#reviews">Reviews</a>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Our Menu</h3>
+                    <a href="#menu">Burgers</a>
+                    <a href="#menu">Pizza</a>
+                    <a href="#menu">Fries & Sides</a>
+                    <a href="#menu">Drinks</a>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Get In Touch</h3>
+                    <a href="mailto:hello@cravio.com">hello@cravio.com</a>
+                    <a href="tel:+923001234567">+92 300 1234567</a>
+                    <p>Pakistan</p>
+                </div>
+            </div>
+
+            <div class="footer-newsletter">
+                <div>
+                    <h3>Stay in the Loop!</h3>
+                    <p>Get delicious updates and exclusive offers.</p>
+                </div>
+                <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit">Subscribe ↗</button>
+                </form>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 CRAVIO. All Rights Reserved.</p>
+                <a href="#home">Back to Top ↑</a>
+            </div>
+        </footer>
+    </main>
+
+    <!-- CART DRAWER & OVERLAY -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+    <div class="cart-drawer" id="cartDrawer">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button id="closeCart">✕</button>
+        </div>
+
+        <div class="cart-items" id="cartItems">
+            <p class="empty-cart">Your cart is empty.</p>
+        </div>
+
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <strong id="cartTotal">$0.00</strong>
+            </div>
+            <button class="checkout-btn" id="checkoutBtn">
+                Proceed to Checkout
+            </button>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+</body>
+</html>

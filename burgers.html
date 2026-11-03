@@ -1,0 +1,244 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Burger Bliss | CRAVIO</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+
+        <a href="index.html" class="logo">CRAVIO<span>.</span></a>
+
+        <nav id="navLinks" class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="index.html#menu">Menu</a>
+            <a href="index.html#about">About</a>
+            <a href="index.html#offers">Offers</a>
+            <a href="index.html#reviews">Reviews</a>
+            <a href="index.html#contact">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+            <button id="cartTrigger" class="cart-btn">
+                Cart (<span id="cartCount">0</span>)
+            </button>
+
+            <a href="index.html#menu" class="nav-order-btn">
+                Order Now
+            </a>
+        </div>
+
+        <button class="menu-toggle" id="menuToggle">☰</button>
+
+    </header>
+
+
+    <!-- PAGE HEADING -->
+    <section class="category-heading">
+
+        <p>JUICY • FRESH • DELICIOUS</p>
+
+        <h1>Burger Bliss</h1>
+
+        <span>Big flavors, juicy patties and unforgettable bites.</span>
+
+    </section>
+
+
+    <!-- BURGER MENU -->
+    <section class="food-menu">
+
+        <div class="food-grid">
+
+            <!-- BURGER 1 -->
+            <div class="food-card">
+
+                <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800" alt="Classic beef burger">
+
+                <div class="food-info">
+
+                    <h3>Classic Beef Burger</h3>
+                    <p>Juicy beef patty with fresh lettuce, tomato and cheese.</p>
+
+                    <h4>$9.00</h4>
+
+                    <button class="add-btn" data-name="Classic Beef Burger" data-price="9">
+                        Add to Cart
+                    </button>
+
+                    <button class="direct-order-btn" data-name="Classic Beef Burger" data-price="9">
+                        Order Now
+                    </button>
+
+                </div>
+            </div>
+
+
+            <!-- BURGER 2 -->
+            <div class="food-card">
+
+                <img src="https://cdn.pixabay.com/photo/2026/07/23/09/34/09-34-38-59_1280.jpg" alt="Cheese burger">
+
+                <div class="food-info">
+
+                    <h3>Cheese Burger</h3>
+                    <p>Delicious beef patty loaded with melted cheddar cheese.</p>
+
+                    <h4>$10.00</h4>
+
+                    <button class="add-btn" data-name="Cheese Burger" data-price="10">
+                        Add to Cart
+                    </button>
+
+                    <button class="direct-order-btn" data-name="Cheese Burger" data-price="10">
+                        Order Now
+                    </button>
+
+                </div>
+            </div>
+
+
+            <!-- BURGER 3 -->
+            <div class="food-card">
+
+                <img src="https://images.unsplash.com/photo-1561758033-d89a9ad46330?w=800" alt="Chicken burger">
+
+                <div class="food-info">
+
+                    <h3>Crispy Chicken Burger</h3>
+                    <p>Crispy chicken fillet with creamy sauce and fresh vegetables.</p>
+
+                    <h4>$8.50</h4>
+
+                    <button class="add-btn" data-name="Crispy Chicken Burger" data-price="8.5">
+                        Add to Cart
+                    </button>
+
+                    <button class="direct-order-btn" data-name="Crispy Chicken Burger" data-price="8.5">
+                        Order Now
+                    </button>
+
+                </div>
+            </div>
+
+
+            <!-- BURGER 4 -->
+            <div class="food-card">
+
+                <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=800" alt="Double burger">
+
+                <div class="food-info">
+
+                    <h3>Double Patty Burger</h3>
+                    <p>Two juicy beef patties with cheese and signature sauce.</p>
+
+                    <h4>$13.00</h4>
+
+                    <button class="add-btn" data-name="Double Patty Burger" data-price="13">
+                        Add to Cart
+                    </button>
+
+                    <button class="direct-order-btn" data-name="Double Patty Burger" data-price="13">
+                        Order Now
+                    </button>
+
+                </div>
+            </div>
+
+
+            <!-- BURGER 5 -->
+            <div class="food-card">
+
+                <img src="https://images.unsplash.com/photo-1520072959219-c595dc870360?w=800" alt="BBQ burger">
+
+                <div class="food-info">
+
+                    <h3>BBQ Smoke Burger</h3>
+                    <p>Smoky barbecue sauce, grilled beef and melted cheese.</p>
+
+                    <h4>$11.00</h4>
+
+                    <button class="add-btn" data-name="BBQ Smoke Burger" data-price="11">
+                        Add to Cart
+                    </button>
+
+                    <button class="direct-order-btn" data-name="BBQ Smoke Burger" data-price="11">
+                        Order Now
+                    </button>
+
+                </div>
+            </div>
+
+
+            <!-- BURGER 6 -->
+            <div class="food-card">
+
+                <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?w=800" alt="Special burger">
+
+                <div class="food-info">
+
+                    <h3>CRAVIO Special Burger</h3>
+                    <p>Our signature burger with special sauce and fresh toppings.</p>
+
+                    <h4>$14.00</h4>
+
+                    <button class="add-btn" data-name="CRAVIO Special Burger" data-price="14">
+                        Add to Cart
+                    </button>
+
+                    <button class="direct-order-btn" data-name="CRAVIO Special Burger" data-price="14">
+                        Order Now
+                    </button>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- CART -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+    <aside class="cart-drawer" id="cartDrawer">
+
+        <button id="closeCart" class="close-cart">×</button>
+
+        <h2>Your Cart</h2>
+
+        <div id="cartItems"></div>
+
+        <div class="cart-bottom">
+
+            <h3>Total: $<span id="cartTotal">0.00</span></h3>
+
+            <button id="checkoutBtn">
+                Proceed to Checkout
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <!-- FOOTER -->
+    <footer class="pasta-footer">
+        <p>© 2026 CRAVIO. Cravings Made Extraordinary.</p>
+        <a href="index.html">Back to Home</a>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
